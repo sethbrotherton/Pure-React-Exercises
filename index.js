@@ -226,7 +226,34 @@ import Logo from "./logo-og.png";
 
 // ReactDOM.render(<Container />, document.querySelector("#root"));
 
-// CHILDREN EXERCISE 3
+
+// CHILDREN EXERCISE 2.D
+
+// const Tail = ({ children, number }) => {
+//   let items = React.Children.toArray(children);
+//   let lastItems = items.slice(items.length - number, items.length);
+//   return <div>{lastItems}</div>;
+// };
+
+// const Wrapper = () => {
+//   return (
+//     <Tail number={5}>
+//       <p>1</p>
+//       <p>2</p>
+//       <p>3</p>
+//       <p>4</p>
+//       <p>5</p>
+//       <p>6</p>
+//       <p>7</p>
+//       <p>8</p>
+//       <p>9</p>
+//     </Tail>
+//   );
+// };
+
+// ReactDOM.render(<Wrapper />, document.querySelector("#root"));
+
+CHILDREN EXERCISE 3
 
 function Dialog({ children }) {
   let header, body, footer;
